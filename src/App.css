@@ -20,23 +20,12 @@ body{
 }
 
 .sidebar{
-    flex: 2.5;
+    flex: 3;
     border-right: 1px solid rgb(100, 100, 100) ;
 }
 
 .main {
-   flex: 9.5; 
-}
-
-.logo{
- margin-right: 1rem;
- height: 65px;
- width: 65px;
-}
-
-.brand{
-     font-size: 2rem;
-
+   flex: 9; 
 }
 
 .uperSideTop{
@@ -46,6 +35,17 @@ body{
     margin-bottom: 2rem;
 }
 
+.logo{
+ margin-right: .3rem;
+ height: 65px;
+ width: 65px;
+}
+
+.brand{
+     font-size: 2.1rem;
+
+}
+
 .addBttnImage{
     height: 19px;
     width: 29px;
@@ -53,8 +53,7 @@ body{
 }
 
 .upButton{
-    margin-left: 2.4rem;
-    margin-bottom: 3rem;
+    margin: 2rem 2.4rem;
     padding: 1rem;
     display:flex;
     align-items:center ;
@@ -68,7 +67,7 @@ body{
 }
 
 .uperSideBottom{
-    padding-left: 2.4rem;
+    padding: 0rem 2.4rem;
     border-bottom: 1px solid rgb(100, 100, 100) ;
     height: 280px;
 }
@@ -91,5 +90,116 @@ body{
   width: 29px;
 }
 
+.lowerSide{
+    margin-left: 2.4rem;    
+    margin-top: 2rem;
+}
 
+.listItems{
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    margin: 1rem 0;
+    
+}
+
+.listItemsImage{
+    height: 3.5rem;
+    width: 3.5rem;
+    padding: .5rem;
+    margin-right: 1rem;
+    border: 1px solid grey;
+    border-radius: 70px;
+}
+
+.userImage{
+        height: 3.5rem;
+        width: 3.5rem;
+        margin-right: 1rem;
+        border: 1px solid rgb(28, 30, 58);
+        border-radius: 70px;
+}
+
+.gptImage{
+    height: 3.5rem;
+    width: 3.5rem;
+    margin-right: 1rem;
+    border: 1px solid rgb(28, 30, 58) ;
+    border-radius: 70px;
+}
+
+.main{
+    min-height: calc(100vh - 14rem);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 6rem 15rem;
+    margin-bottom: 1rem;
+    
+}
+
+.chats{
+    overflow: hidden ;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    width: 100%;
+    max-width: 70rem;
+    height: calc(100vh - 17rem);
+}
+
+.chatQues{
+    margin: 1rem;
+    padding: 2rem 3rem;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: flex-start;
+    text-align: justify;
+}
+
+.chatAns{
+    margin: 1rem;
+    padding: 2rem 3rem;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: flex-start;
+    text-align: justify;
+    background-color: rgba(28, 30, 58 ,1);
+    width:fit-content;
+    border-radius: 15px;
+}
+
+.chatFooter{
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center
+}
+
+.textInput{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(28, 30, 58 ,1);
+    padding: .5rem;
+    border-radius: 5px;
+    width: 65em;
+}
+
+.textInput>input{
+    outline: none;
+    padding: 1.25rem;
+    color: white;
+    width: calc(100% - 3rem);
+}
+
+.textInput>input, .send{
+    background-color: transparent;
+    border: none;
+}
+
+.chatFooter>p{
+    margin: 1rem 0;
+}
 
